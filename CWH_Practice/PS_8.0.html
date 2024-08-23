@@ -1,0 +1,104 @@
+<!-- Question 1. Create a thin progress bar animation for a website -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS_8.0_Q-1</title>
+    <style>
+        .progress {
+            height: 2px;
+            width: 0px;
+            background-color: red;
+            animation: moveProgressBar 1s ease 1 forwards;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            height: 70px;
+            background-color: black;
+        }
+
+        main {
+            height: 899px;
+            background-color: blue;
+        }
+
+        @keyframes moveProgressBar {
+            0% {
+                width: 0vw;
+            }
+
+            60% {
+                width: 90vw;
+            }
+
+            100% {
+                width: 98vw;
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <header></header>
+    <main>
+    </main>
+</body>
+
+</html> -->
+
+<!-- Question 2. Create the same progress bar using transition -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS_8.0_Q-2</title>
+    <style>
+        .progress:hover{
+            width: 99vw;
+        }
+        .progress {
+            height: 2px;
+            width: 1px;
+            background-color: red;
+            transition: width 1s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            height: 70px;
+            background-color: black;
+        }
+        main{
+            height: 100vh;
+            background-color: antiquewhite;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <header></header>
+    <main></main>
+</body>
+
+</html>

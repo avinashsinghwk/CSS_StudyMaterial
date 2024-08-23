@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 56vh;
+            background-color: yellow;
+
+            display: grid;
+
+            /* grid-row-gap: 9px;
+            grid-column-gap: 9px; */
+            /* grid-gap: 15px; */
+            grid-gap: 9px 9px;
+
+            /* grid-template-columns: auto 65px auto; */
+            /* grid-template-rows: 44px 88px 20px; */
+            /* grid-template-columns: auto auto auto auto; */
+            /* grid-template-columns: repeat(7,auto) ; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: 100px repeat(2, 1fr) 100px;
+            /* grid-template-rows: repeat(4, 1fr); */
+            /* grid-template-rows: repeat(4, 40px); */
+
+            /* justify-content: center;
+            align-content: center;  */
+
+            grid-auto-rows: minmax(100px auto);
+            
+        }
+        .item{
+            background-color: aquamarine;
+            border: 2px solid black;
+        }
+       .three{
+           grid-column-start: 1;
+           grid-column-end: 4;
+           /* grid-column: 1/4; */
+           /* grid-column: 1/span 3; */
+
+            /* grid-row: 2/4; */
+            /* grid-row: 1/span 3; */
+        }
+
+        /* .two{
+            grid-row: 2/4;
+        } */
+
+
+
+        .container2{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(118, 85, 85);
+            display: grid;
+            grid-template-rows: 100px auto 100px;
+            grid-template-columns: 100px auto 100px;
+            gap: 10px;
+            padding: 20px;
+        }
+        .box{
+            background-image: linear-gradient(45deg, red, blue, orange);
+        }
+        .box1,.box5{
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item one">1</div>
+        <div class="item two">2</div>
+        <div class="item three">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+
+    <!-- <div class="container2">
+        <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+        <div class="box4 box">4</div>
+        <div class="box5 box">5</div>
+    </div> -->
+</body>
+</html>

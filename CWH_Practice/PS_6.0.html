@@ -1,0 +1,64 @@
+<!-- Question 1. Create a layout of your choice using float -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS_6.0_Q-1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+            color: white;
+            padding: 18px;
+        }
+
+        header {
+            background-color: black;
+            height: 55px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+        .left{
+            height: 80vh;
+            width: 40vw;
+            background-color: aqua;
+            /* float: left; */   
+        }
+        .right{
+            height: 80vh;
+            width: 40vw;
+            background-color: brown;
+            /* float: right; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Menu</li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis dolorum rem at deserunt possimus repellat optio voluptates quis enim obcaecati facere id reprehenderit perferendis beatae vel culpa quod labore a tempore, atque nulla ut.</div>
+        <div class="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deleniti maiores doloribus quae laboriosam, eaque enim, ipsa vero nisi expedita repudiandae non a in perferendis quas. Modi molestias, dolorum veritatis asperiores assumenda corrupti natus odit temporibus quam nemo corporis ipsam distinctio velit alias impedit vitae!</div>
+    </div>
+</body>
+
+</html>
+
+<!-- Question 2. Create the same layout in Q-1 using flexbox -->

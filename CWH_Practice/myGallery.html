@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            margin: 0 20%;
+        }
+        h1{
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.9rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        figure{
+            height: 19rem;
+            position: relative;
+        }
+        figure img{
+            height: 100%;
+            width: 100%;
+            border-radius: 16px;
+            filter:grayscale(100%);
+            /* filter:blur(6px); */
+        }
+        
+        figure img:hover{
+            cursor: pointer;
+            filter: grayscale(none);
+            transform: scale(1.02);
+            filter: drop-shadow(0 0 9px black);
+            transition: 0.3s;
+        }
+        figcaption{
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+            font-size: 1rem;    
+            font-weight: bold;
+            opacity: 0;
+            color: white;
+        }
+        figure:hover figcaption{
+            opacity: 1;
+            transform: scale(1.2);
+            transition: .3s;
+        }
+
+        
+    </style>
+<body>
+    <div class="wrapper">
+        <h1>My Gallery</h1>
+        <div class="container">
+            <figure>
+                <img src="Image/img1.jpg">
+                <figcaption>Image1</figcaption>
+            </figure>
+            <figure>
+                <img src="Image/img2.jpg">
+                <figcaption>Image2</figcaption>
+            </figure>
+            <figure>
+                <img src="Image/img3.jpg">
+                <figcaption>Image1</figcaption>
+            </figure>
+            <figure>
+                <img src="Image/img5.jpg">
+                <figcaption>Image3</figcaption>
+            </figure>
+            <figure>
+                <img src="Image/img4.jpg">
+                <figcaption>Image4</figcaption>
+            </figure>
+            <figure>
+                <img src="Image/img1.jpg">
+                <figcaption>Image1</figcaption>
+            </figure>
+            <figure>
+                <img src="Image/img6.jpg">
+                <figcaption>Image7</figcaption>
+            </figure>
+            <figure>
+                <img src="Image/img3.jpg">
+                <figcaption>Image8</figcaption>
+            </figure>
+            <figure>
+                <img src="Image/img2.jpg">
+                <figcaption>Image9</figcaption>
+            </figure>
+            <figure>
+                <img src="Image/img4.jpg">
+                <figcaption>Image1</figcaption>
+            </figure>
+            <figure>
+                <img src="Image/img5.jpg">
+                <figcaption>Image1</figcaption>
+            </figure>
+            <figure>
+                <img src="Image/img1.jpg">
+                <figcaption>Image1</figcaption>
+            </figure>
+            <figure>
+                <img src="Image/img6.jpg">
+                <figcaption>Image1</figcaption>
+            </figure>
+            <figure>
+                <img src="Image/img7.jpg">
+                <figcaption>Image7</figcaption>
+            </figure>
+        </div>
+    </div>
+</body>
+
+</html>

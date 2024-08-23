@@ -1,0 +1,157 @@
+<!-- Question 2. Create the layouts created in PS-6 using CSS grid -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS_7.1_Q-2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: black;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 60px 60px;
+            align-items:center;
+        }
+        .photo{
+            width: 26px;
+            height: 26px;
+            background-image: url("Image/profile.png");
+            background-repeat: no-repeat;
+            background-size: 25px 25px;
+        }
+        ul{
+            list-style: none;  
+            color: white;
+            display: grid;
+            grid-template-columns: 60px 60px 60px;
+            align-items:center;
+        }
+        .container{
+            height: 100vh;
+            background-color: antiquewhite;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content : space-around;
+            align-items: center;
+
+        }
+        .one{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+        }
+        .two{
+            height: 150px;
+            width: 150px;
+            background-color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="photo"></div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: black;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 60px 185px;
+            align-items: center;
+            justify-content:space-between;
+        }
+        ul{
+            display: grid;
+            grid-template-columns: 60px 60px 60px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .photo{
+            width: 26px;
+            height: 26px;
+            background-image: url("Image/profile.png") ;
+            background-repeat: no-repeat;
+            background-size: 25px 25px;
+        }
+        .Image{
+            height: 180px;
+            background-image: url("Image/color.jpg");
+            background-repeat: repeat-x;
+            background-size: auto;
+        }
+        .container{
+            height: 100vh;
+            background-color: beige;
+            display: grid;
+            grid-template-columns: auto auto auto; 
+            justify-content: space-around;
+            align-items: center;
+        }
+.one{
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+}
+.two{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+.three{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav> <div class="photo"></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="Image"></div>
+    <div class="container">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+</body>
+</html>

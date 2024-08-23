@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            height: 60px;
+            position: sticky;
+            top: 0;
+            z-index: 7;
+            background-image: linear-gradient(to left, red, orange, pink, green);
+        }
+        .navigation{
+            height: 60px;
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+            border-bottom: 1px solid black;
+            margin-left: 30px;
+        }
+        .navigation li{
+            list-style: none;
+            font-size: 1.2rem;
+        }
+        section::before{
+            content:"";
+            background: url("photo/bg3.jpg") no-repeat center center/cover;
+            /* background-size: cover; */
+            position: absolute;
+            top: 60px;
+            height: calc(100vh - 60px);
+            width: 100%;
+            opacity: 0.5;
+            z-index: -1;
+        } 
+        section{
+            height: calc(100vh - 60px);
+            width: 100%;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+        }
+       h3{
+           text-align: center;
+           font-size: 2.4rem;
+       }
+       p{
+        margin: 0 30px;
+        font-size: 1.2rem;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navBar">
+          <ul class="navigation">
+              <li class="item">Home</li>
+              <li class="item">Contact</li>
+              <li class="item">Menu</li>
+              <li class="item">About</li>
+          </ul>
+        </nav>
+    </header>
+       <section>
+           <h3>Welcome to Coding World</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquam similique maiores suscipit sint neque officiis, expedita in earum velit laborum, ea odio nulla rem eveniet aspernatur error consectetur soluta magnam explicabo veniam ducimus.</p>
+       </section>
+       <div class="extra" style="height: 100vh"></div>
+    
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow </title>
+    <style>
+         .container{
+             display: flex;
+         }
+         .card{
+             padding: 0 20px;
+             margin: 0 20px;
+             width: 366px;
+             height: 180px;
+             background-color: rgb(153, 59, 122);
+             color: white;
+             /* Box Shadow: Offset-X Offset-Y */
+             /* box-shadow: 4px 5px green; */
+             /* box-shadow: -4px -5px green; */
+
+             /* Box Shadow: Offset-X Offset-Y Bluur-radius*/
+             /* box-shadow: 7px 5px 10px green; */ 
+
+             /* Box Shadow: Offset-X Offset-Y Bluur-radius Spread-radius */               
+             /* box-shadow: 7px 5px 10px 10px green; */
+             /* box-shadow: inset 3px 9px red; */
+             box-shadow: 3px 4px green, 4px 6px blue;
+         }
+         #card-1 h2{
+                  text-shadow: 3px 4px red;
+                  text-shadow: 3px 4px 3px green;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ Course</h2>
+            <p>I Want to learn the C++ course, and become best in it. I know it is quite hard for new coders</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is Java Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ducimus optio voluptates modi dolor exercitationem blanditiis neque tempore totam. Omnis, reprehenderit?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima laborum quidem rerum illum iusto modi numquam neque, assumendaiis, minus iste nostrum labore cupiditate corrupti?</p>
+        </div>
+    </div>
+</body>
+</html> -->

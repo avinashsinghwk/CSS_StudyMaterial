@@ -1,0 +1,94 @@
+<!-- Question 3. Create a rotating image animation -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS_8.1_Q-3</title>
+    <style>
+        .container{
+            height: 90vh;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+            animation: rotate 2s ease-in 0.5s infinite forwards;
+        }
+          @keyframes rotate {
+            from{
+                 transform: rotateZ(0deg);
+              }
+              to{
+                  transform: rotateZ(360deg);
+              }
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Image/dragon.jpg" alt="dragon">
+    </div>
+</body>
+</html> -->
+
+    <!-- Question 4. Create a slider with 3 images using CSS -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PS_8.1_Q-4</title>
+        <style>
+             .container{
+                 height: 60vh;
+                 background-color: red;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+             }
+             @keyframes one {
+                 from{
+                     transform: translateX(0px);
+                 }
+                 to{
+                     transform: translateX(99vw);
+                 }
+             }
+             .one{
+                 animation: one 1s ease-in infinite ;
+             }
+             @keyframes two {
+                 from{
+                     transform: translateX(0px);
+                 }
+                 to{
+                     transform: translateX(99vw);
+                 }
+             }
+             .two{
+                 animation: one 1s ease-in infinite ;
+             }
+             @keyframes three {
+                 from{
+                     transform: translateX(0px);
+                 }
+                 to{
+                     transform: translateX(99px);
+                 }
+             }
+             .three{
+                 animation: one 1s ease-in infinite ;
+             }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img class="one" src="Image/color.jpg" alt="One" width="432px" height="250px">
+            <img class="two" src="Image/dragon.jpg" alt="Two" width="440px" height="250px">
+            <img class="three" src="Image/profile.png" alt="Three" width="430px" height="250px">
+        </div>
+    </body>
+    </html>

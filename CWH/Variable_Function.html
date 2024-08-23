@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable and Function</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{                                /* Global Variable */
+            --nav_footer_bg: #00ff00;   
+            --section_bg: rgb(255, 0, 0, 0.3);
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            padding: 0 20px;
+        }
+        nav, footer{
+            height: 100px;
+            background-color: var(--nav_footer_bg);
+        }
+        section{
+            height: calc(100vh - 200px);    /* Function */
+            background-color: var(--section_bg);
+        }
+    </style>
+    <div class="container">
+        <nav></nav>
+        <section></section>
+        <footer></footer>
+    </div>
+</body>
+</html>

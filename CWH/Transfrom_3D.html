@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transformation</title>
+</head>
+<style>
+
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        border: 1px solid black;
+    }
+
+    .translated{
+        transform: perspective(10px) translateZ(-10px);
+    }
+
+    .scaled{
+        margin-left: 20px;
+        transform: rotateZ(20deg);
+        transform: perspective(315px) scaleZ(8) rotateY(15deg);
+    }
+
+
+</style>
+<body>
+    <div class="static">static</div>
+    <div class="translated">translated</div>
+    <div class="scaled">scaled</div>
+</body>
+</html>

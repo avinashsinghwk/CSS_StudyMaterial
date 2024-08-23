@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Shadow</title>
+</head>
+<style>
+
+    /* Linear-gradient */
+    .box{
+        height: 200px;
+        width: 90vw;
+        border: 2px solid black;
+        /* background-image: linear-gradient(to bottom right,#ff0000, rgb(0, 255, 0), #0000ff, yellow); */
+
+        /* background-image: linear-gradient(to left ,#ff0000, rgb(0, 255, 0), #0000ff,#ffffff, #000000, yellow); */
+
+        /* background-image: linear-gradient(to bottom ,#ff0000, rgb(0, 255, 0), #0000ff, yellow); */
+
+        background-image: linear-gradient(30deg ,#ff0000, rgb(0, 255, 0), #0000ff, yellow);
+
+        /* background-image: linear-gradient(30deg ,#ff0000, rgb(0, 255, 0), #0000ff, yellow); */
+    }
+
+    /* radial-gradient */
+    .box2{
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        margin-top: 20px;
+        /* background-image: radial-gradient(circle, red, orange, blue, yellow); */
+
+        background-image: radial-gradient( yellow 5%, orange 10%, red);
+    }
+
+        /* conic-gradient */
+
+    .box3{
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        /* background-image: conic-gradient(red, #00ff00, rgb(0, 0, 255)); */
+
+        /* background-image: conic-gradient( red 90deg, green 180deg, blue 270deg, yellow 360deg); */
+
+        background-image: conic-gradient( red 0deg,red 90deg, green 90deg,green 180deg, blue 180deg,blue 270deg, yellow 270deg, yellow 360deg);
+    }
+
+    .flag{
+        width: 50vw;
+        height: 300px;
+        margin-top: 20px;
+        background-image: linear-gradient( orange, rgb(220, 214, 214), green);
+    }
+    .shadow{
+        font-size: 29px;
+        font-weight: bolder;
+        text-shadow: 2px 2px 2px red, -3px -3px 3px yellow;
+        /* text-shadow: 2px 2px red, -3px -3px yellow; */
+    }
+
+    .box-shadow{
+        height: 200px;
+        width: 200px;
+        background-color: aquamarine;
+        /* box-shadow: 4px 4px red, -4px -4px green; */
+        /* box-shadow: 4px 4px 4px red, -4px -4px 4px green; */
+        box-shadow: 4px 4px 4px 6px red, -4px -4px 4px 6px green;
+    }
+
+</style>
+<body>
+    <!-- <div class="box"></div>
+
+    <div class="box2"></div>
+
+    <div class="box3"></div> -->
+
+    <!-- <div class="flag"></div> -->
+
+    <p class="shadow">This is my shadow</p>
+
+    <div class="box-shadow"></div>
+</body>
+</html>

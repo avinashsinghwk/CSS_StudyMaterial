@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* li {
+            display: inline-block;
+        } */
+
+        body{
+            height: 200vh;
+        }
+
+        header {
+            background-color: red;
+            height: 70px;
+            position: sticky;
+            top:0;
+            z-index:3;
+        }
+        p {
+            text-align: center;
+            border: 2px solid red;
+        }
+
+        .container {
+            background-color: aqua;
+            width: 50vw;
+            height: 50vh;
+            margin: auto;
+            padding: 0px 20px;
+            position: relative; 
+             z-index: 2;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            /* position: relative; */
+            /* position: absolute;
+            bottom: 0;
+            right:0; 
+            position:fixed; */
+          
+        }
+        .box2 {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(97, 75, 139);
+        }
+        ul{
+           list-style: square outside ;
+           margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body> 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore excepturi earum officiis architecto, id
+            incidunt ab ipsum quod delectus dolores quas iure fuga voluptate totam modi, minus cumque et blanditiis sit
+            perspiciatis amet inventore?</p>
+        <div class="box">I am a box</div>
+        <div class="box2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem sit sint qui laudantium explicabo ab inventore voluptatibus enim aspernatur nobis at amet neque placeat, earum labore, minus doloribus illo, dicta pariatur quod vel? Dolor?</div>
+    </div>
+    <ul><li>Apple</li>
+    <li>Banana</li>
+<li>Papaya</li></ul>
+
+</body>
+
+</html>

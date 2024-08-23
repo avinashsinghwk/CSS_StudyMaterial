@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform and Transition</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 450px;
+            background-color: blueviolet;
+        }
+
+        .box {
+            display: inline-block;
+            border: 2px solid black;
+            /* transform: translateX(33px);
+                   transform: translateY(30px); */
+            /* transform: translate(33px, 30px) rotate(0.5turn); */
+            /* transform: rotate(90deg); */
+            /* transform-origin: 0;  */
+            /* transform: scaleX(3); */
+            /* transform: scaleY(2); */
+            /* transform: scale(3,4); */
+            /* transform: skew(4deg,6deg); */
+            /* transform: skewX(20deg); */
+            /* transform: skewY(10deg); */
+            /* transform: matrix(); */
+            /* transform: translate(30px, 45px) rotateZ(35deg); */
+
+        }
+        img:hover{
+            width: 300px;
+            height: 50px;
+        }
+
+        img {
+            /* transition-property: width;
+            transition-duration: 3s;
+            transition-timing-function: ease-out;
+            transition-delay: 3s; */
+            transition: width 2s ease-in-out 1s, height 2s ease-in 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"><img src="Photo/akshay.jpg" alt="Image" height="260px" width="560px"></div>
+    
+    </div>
+</body/>
+    
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Circle</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(208, 208, 208);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 400px;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 7px solid rgba(0, 0, 0, 0.5);
+        position: relative;
+        animation: rotate 20s linear infinite reverse;
+
+    }
+
+    .box {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 10px solid rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.3);
+        position: relative;
+        animation: rotate 15s linear infinite forwards;
+    }
+
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: linear-gradient(red, green, blue, orange);
+        padding: 3px;
+        position: absolute;
+    }
+    @keyframes rotate {
+        from{
+            transform: rotate(0);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    
+    .one {
+        top: -12%;
+        left: 40%;
+    }
+    .two {
+        right: -12%;
+        top: 40%;
+    }
+
+    .three {
+        bottom: -12%;
+        left: 40%;
+    }
+
+    .four {
+        left: -12%;
+        top: 40%;
+    }
+    .five {
+        top: -6%;
+        left: 40%;
+    }
+    .six {
+        right: -6%;
+        top: 40%;
+    }
+
+    .seven {
+        bottom: -6%;
+        left: 40%;
+    }
+
+    .eight {
+        left: -6%;
+        top: 40%;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img class="one" src="Image/img1.jpg" alt="">
+            <img class="two" src="Image/img2.jpg" alt="">
+            <img class="three" src="Image/img3.jpg" alt="">
+            <img class="four" src="Image/img4.jpg" alt="">
+        </div>
+        <img class="five" src="Image/img1.jpg" alt="">
+        <img class="six" src="Image/img2.jpg" alt="">
+        <img class="seven" src="Image/img3.jpg" alt="">
+        <img class="eight" src="Image/img4.jpg" alt="">
+    </div>
+</body>
+
+</html>

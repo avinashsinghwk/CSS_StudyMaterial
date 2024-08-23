@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Button</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 97vh;
+    }
+    button{
+        padding: 10px 29px;
+        background-color: rgb(161, 32, 32);
+        font-weight: bold;
+        font-size: 1rem;
+        border-radius: 4px;
+        position: relative;
+        filter: drop-shadow(0 0 6px black);
+        cursor: pointer;
+        border: none;
+        color: white;
+    }
+    button::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-color: blue;
+        width: 0px;
+        height: 100%;
+        transition: width 0.8s;
+    }
+    
+    
+    button:hover::before{
+        width: 100%;
+    }  
+    
+   #radio:checked body{
+        background-color: blue;
+    }
+
+</style>
+<body>
+    <button>Click Me</button>
+    <input type="radio" name="radio" id="radio">
+</body>
+</html>

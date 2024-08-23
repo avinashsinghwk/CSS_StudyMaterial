@@ -1,0 +1,176 @@
+<!-- Question 3. Create the following navigation bar using flexbox -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS_6.1_Q-3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            height: 55px;
+            background-color: black;
+            position: sticky;
+            top : 0;
+
+        }
+        .photo{
+            width: 26px;
+            height: 26px;
+            background-image: url("Image/profile.png");
+             background-repeat: no-repeat;
+             background-size: 25px 25px;
+             position: fixed;
+             top: 16px;
+             left: 17px;
+        }
+        
+         li{
+             display: inline-block;
+             padding: 18px 0px 18px 32px;
+         }
+         a{
+             text-decoration: none;
+             color: white;
+         }
+         ul{
+             padding-left: 40px;
+         }
+         
+         .container{
+             height: 150vh;
+             background-color: aqua;
+             display: flex;
+             justify-content: space-around;
+             align-items: center;
+         }
+         .box1{
+             height: 250px;
+             width: 250px;
+             background-color: red;
+         }
+         .box2{
+             height: 250px;
+             width: 250px;
+             background-color: blueviolet;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+    <div class="photo"></div>
+</body>
+</html> -->
+
+<!-- Question 4. Create the followint layout using flexbox -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS_6.1_Q-4</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       ul{
+           display: flex;
+           justify-content: flex-end;
+         
+       }
+        li{
+            display: inline-block;
+            color: white;
+            padding: 20px;
+        }
+        header{
+            background-color: black;
+            height: 60px;  
+            position: sticky; 
+            top: 0;
+            z-index: -2;
+            
+        }
+        .profile{
+            width: 26px;
+            height: 26px;
+            background-image: url("Image/profile.png");
+            background-repeat: no-repeat;
+            background-size: 25px 25px;
+            position: fixed;
+            top: 35px;
+            left: 40px;
+            
+               
+        }
+       
+        .photo{
+            height:183px;
+            background-image: url("Image/color.jpg");
+            background-repeat: repeat-x;
+        }
+        .container{
+            height: 170vh;
+            background-color:blanchedalmond;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+        .one{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+        }
+        .two{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+        }
+        .three{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+               
+            </ul>
+        </nav>
+    </header>
+    <div class="profile"></div>
+    <div class="photo"></div>
+    <div class="container">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+
+</body>
+</html>
